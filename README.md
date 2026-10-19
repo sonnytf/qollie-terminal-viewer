@@ -24,27 +24,24 @@
 
 ## 🚀 下載與安裝
 
-從 **[GitHub Releases](https://github.com/sonnytf/qollie-terminal-viewer/releases)** 下載適合你作業系統與架構的壓縮檔：
+從 **[GitHub Releases](https://github.com/sonnytf/qollie-terminal-viewer/releases)** 下載適合你作業系統與架構的執行檔（**純單一執行檔，免解壓縮**）：
 
 | 作業系統 / 架構 | 檔案名稱 | 說明 |
 | :--- | :--- | :--- |
-| **macOS Apple Silicon** | `qollie-darwin-arm64.tar.gz` | M1 / M2 / M3 / M4 晶片 |
-| **macOS Intel** | `qollie-darwin-amd64.tar.gz` | x86_64 架構 |
-| **Linux 64-bit** | `qollie-linux-amd64.tar.gz` | 一般 x86_64 伺服器 / PC |
-| **Linux ARM64** | `qollie-linux-arm64.tar.gz` | aarch64 / 樹莓派 / 雲端 ARM |
-| **Windows 64-bit** | `qollie-windows-amd64.zip` | 一般 Windows 64 位元 |
+| **macOS Apple Silicon** | `qollie-darwin-arm64` | M1 / M2 / M3 / M4 晶片 |
+| **macOS Intel** | `qollie-darwin-amd64` | x86_64 架構 |
+| **Linux 64-bit** | `qollie-linux-amd64` | 一般 x86_64 伺服器 / PC |
+| **Linux ARM64** | `qollie-linux-arm64` | aarch64 / 樹莓派 / 雲端 ARM |
+| **Windows 64-bit** | `qollie-windows-amd64.exe` | 一般 Windows 64 位元 |
 
 ### 快速安裝範例 (macOS / Linux)
 
 ```bash
-# 1. 解壓縮檔案
-tar -zxvf qollie-darwin-arm64.tar.gz
+# 1. 賦予下載的檔案執行權限
+chmod +x qollie-darwin-arm64
 
-# 2. 賦予執行權限
-chmod +x qollie
-
-# 3. (選用) 移動至系統 PATH 方便隨處執行
-sudo mv qollie /usr/local/bin/
+# 2. (選用) 重新命名並移動至系統 PATH 方便隨處輸入 qollie 執行
+sudo mv qollie-darwin-arm64 /usr/local/bin/qollie
 ```
 
 ---
