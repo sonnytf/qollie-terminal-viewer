@@ -28,20 +28,21 @@
 
 | 作業系統 / 架構 | 檔案名稱 | 說明 |
 | :--- | :--- | :--- |
-| **macOS Apple Silicon** | `qollie-darwin-arm64` | M1 / M2 / M3 / M4 晶片 |
-| **macOS Intel** | `qollie-darwin-amd64` | x86_64 架構 |
+| **macOS Apple Silicon** | `qollie-macos-arm64` | M1 / M2 / M3 / M4 晶片 |
+| **macOS Intel** | `qollie-macos-amd64` | x86_64 架構 |
 | **Linux 64-bit** | `qollie-linux-amd64` | 一般 x86_64 伺服器 / PC |
 | **Linux ARM64** | `qollie-linux-arm64` | aarch64 / 樹莓派 / 雲端 ARM |
-| **Windows 64-bit** | `qollie-windows-amd64.exe` | 一般 Windows 64 位元 |
+| **Windows 64-bit** | `qollie-windows-amd64.exe` | 一般 Windows x64 架構 |
+| **Windows ARM64** | `qollie-windows-arm64.exe` | Windows on ARM (Snapdragon / Surface 等) |
 
 ### 快速安裝範例 (macOS / Linux)
 
 ```bash
 # 1. 賦予下載的檔案執行權限
-chmod +x qollie-darwin-arm64
+chmod +x qollie-macos-arm64
 
 # 2. (選用) 重新命名並移動至系統 PATH 方便隨處輸入 qollie 執行
-sudo mv qollie-darwin-arm64 /usr/local/bin/qollie
+sudo mv qollie-macos-arm64 /usr/local/bin/qollie
 ```
 
 ---
